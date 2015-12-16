@@ -16,14 +16,13 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
         super.viewDidLoad()
         
         let screenWidth = UIScreen.mainScreen().bounds.size.width
-        
         let layout = UICollectionViewFlowLayout()
-        layout.headerReferenceSize = CGSizeMake(screenWidth, 25)
-        layout.itemSize = CGSizeMake(screenWidth, 100)
+        layout.itemSize = CGSizeMake(screenWidth, 80)
         layout.minimumLineSpacing = 1.0
         
         myCollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
         myCollectionView.registerClass(CustomUICollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
+        myCollectionView.backgroundColor = UIColor.init(white: 0.9, alpha: 1.0)
         myCollectionView.delegate = self
         myCollectionView.dataSource = self
         

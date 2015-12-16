@@ -18,7 +18,6 @@ class StockViewController: UIViewController, UICollectionViewDelegate, UICollect
         let screenWidth = UIScreen.mainScreen().bounds.size.width
         
         let layout = UICollectionViewFlowLayout()
-        layout.headerReferenceSize = CGSizeMake(screenWidth, 25)
         layout.itemSize = CGSizeMake(screenWidth, 100)
         layout.minimumLineSpacing = 1.0
         

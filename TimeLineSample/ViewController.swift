@@ -18,6 +18,8 @@ class ViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Title"
+
         /* フィードタブ */
         feedViewController = FeedViewController()
         feedViewController.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Featured, tag: 1)

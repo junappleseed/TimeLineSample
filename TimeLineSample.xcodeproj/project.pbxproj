@@ -12,6 +12,11 @@
 		BFE2882E1C1BC3B500844DE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE2882C1C1BC3B500844DE7 /* Main.storyboard */; };
 		BFE288301C1BC3B500844DE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE2882F1C1BC3B500844DE7 /* Assets.xcassets */; };
 		BFE288331C1BC3B500844DE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE288311C1BC3B500844DE7 /* LaunchScreen.storyboard */; };
+		BFE2883B1C1BC7BE00844DE7 /* CustomUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2883A1C1BC7BE00844DE7 /* CustomUICollectionViewCell.swift */; };
+		BFE2883D1C1C0F4000844DE7 /* AllPostiongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2883C1C1C0F4000844DE7 /* AllPostiongViewController.swift */; };
+		BFE2883F1C1C101B00844DE7 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2883E1C1C101B00844DE7 /* FeedViewController.swift */; };
+		BFE288411C1C132E00844DE7 /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE288401C1C132E00844DE7 /* StockViewController.swift */; };
+		BFE288451C1C18B800844DE7 /* OwnPostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE288441C1C18B800844DE7 /* OwnPostingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		BFE2882F1C1BC3B500844DE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFE288321C1BC3B500844DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFE288341C1BC3B500844DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFE2883A1C1BC7BE00844DE7 /* CustomUICollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUICollectionViewCell.swift; sourceTree = "<group>"; };
+		BFE2883C1C1C0F4000844DE7 /* AllPostiongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllPostiongViewController.swift; sourceTree = "<group>"; };
+		BFE2883E1C1C101B00844DE7 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		BFE288401C1C132E00844DE7 /* StockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockViewController.swift; sourceTree = "<group>"; };
+		BFE288441C1C18B800844DE7 /* OwnPostingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnPostingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				BFE2882F1C1BC3B500844DE7 /* Assets.xcassets */,
 				BFE288311C1BC3B500844DE7 /* LaunchScreen.storyboard */,
 				BFE288341C1BC3B500844DE7 /* Info.plist */,
+				BFE2883A1C1BC7BE00844DE7 /* CustomUICollectionViewCell.swift */,
+				BFE2883C1C1C0F4000844DE7 /* AllPostiongViewController.swift */,
+				BFE2883E1C1C101B00844DE7 /* FeedViewController.swift */,
+				BFE288401C1C132E00844DE7 /* StockViewController.swift */,
+				BFE288441C1C18B800844DE7 /* OwnPostingViewController.swift */,
 			);
 			path = TimeLineSample;
 			sourceTree = "<group>";
@@ -137,7 +152,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE2882B1C1BC3B500844DE7 /* ViewController.swift in Sources */,
+				BFE288411C1C132E00844DE7 /* StockViewController.swift in Sources */,
+				BFE2883D1C1C0F4000844DE7 /* AllPostiongViewController.swift in Sources */,
+				BFE2883F1C1C101B00844DE7 /* FeedViewController.swift in Sources */,
 				BFE288291C1BC3B500844DE7 /* AppDelegate.swift in Sources */,
+				BFE288451C1C18B800844DE7 /* OwnPostingViewController.swift in Sources */,
+				BFE2883B1C1BC7BE00844DE7 /* CustomUICollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
