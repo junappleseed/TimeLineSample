@@ -1,5 +1,5 @@
 //
-//  FeedViewController.swift
+//  AllPostTabViewController.swift
 //  TimeLineSample
 //
 //  Created by Jun on 2015/12/12.
@@ -8,16 +8,19 @@
 
 import UIKit
 
-class FeedViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class AllPostTabViewController: BaseTabViewController {
     
     var myCollectionView : UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "すべての投稿"
+        
         let screenWidth = UIScreen.mainScreen().bounds.size.width
+        
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSizeMake(screenWidth, 80)
+        layout.itemSize = CGSizeMake(screenWidth, 70)
         layout.minimumLineSpacing = 1.0
         
         myCollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
@@ -32,18 +35,5 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-    }
-    
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 50
-    }
-    
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell : CustomUICollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("MyCell", forIndexPath: indexPath) as! CustomUICollectionViewCell
-        cell.textLabel?.text = indexPath.row.description
-        return cell
     }
 }

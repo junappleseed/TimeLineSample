@@ -13,10 +13,12 @@
 		BFE288301C1BC3B500844DE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE2882F1C1BC3B500844DE7 /* Assets.xcassets */; };
 		BFE288331C1BC3B500844DE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE288311C1BC3B500844DE7 /* LaunchScreen.storyboard */; };
 		BFE2883B1C1BC7BE00844DE7 /* CustomUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2883A1C1BC7BE00844DE7 /* CustomUICollectionViewCell.swift */; };
-		BFE2883D1C1C0F4000844DE7 /* AllPostiongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2883C1C1C0F4000844DE7 /* AllPostiongViewController.swift */; };
-		BFE2883F1C1C101B00844DE7 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2883E1C1C101B00844DE7 /* FeedViewController.swift */; };
-		BFE288411C1C132E00844DE7 /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE288401C1C132E00844DE7 /* StockViewController.swift */; };
-		BFE288451C1C18B800844DE7 /* OwnPostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE288441C1C18B800844DE7 /* OwnPostingViewController.swift */; };
+		BFE2883D1C1C0F4000844DE7 /* AllPostTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2883C1C1C0F4000844DE7 /* AllPostTabViewController.swift */; };
+		BFE2883F1C1C101B00844DE7 /* FeedTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2883E1C1C101B00844DE7 /* FeedTabViewController.swift */; };
+		BFE3F1C81C26E3AE0048F64C /* feed.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE3F1C71C26E3AE0048F64C /* feed.png */; };
+		BFE3F1CA1C26E3C00048F64C /* post.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE3F1C91C26E3C00048F64C /* post.png */; };
+		BFE3F1CC1C26E3C90048F64C /* stock.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE3F1CB1C26E3C90048F64C /* stock.png */; };
+		BFE3F1CE1C26E7810048F64C /* BaseTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE3F1CD1C26E7810048F64C /* BaseTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +30,12 @@
 		BFE288321C1BC3B500844DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFE288341C1BC3B500844DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFE2883A1C1BC7BE00844DE7 /* CustomUICollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUICollectionViewCell.swift; sourceTree = "<group>"; };
-		BFE2883C1C1C0F4000844DE7 /* AllPostiongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllPostiongViewController.swift; sourceTree = "<group>"; };
-		BFE2883E1C1C101B00844DE7 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		BFE288401C1C132E00844DE7 /* StockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockViewController.swift; sourceTree = "<group>"; };
-		BFE288441C1C18B800844DE7 /* OwnPostingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnPostingViewController.swift; sourceTree = "<group>"; };
+		BFE2883C1C1C0F4000844DE7 /* AllPostTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllPostTabViewController.swift; sourceTree = "<group>"; };
+		BFE2883E1C1C101B00844DE7 /* FeedTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTabViewController.swift; sourceTree = "<group>"; };
+		BFE3F1C71C26E3AE0048F64C /* feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feed.png; sourceTree = "<group>"; };
+		BFE3F1C91C26E3C00048F64C /* post.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = post.png; sourceTree = "<group>"; };
+		BFE3F1CB1C26E3C90048F64C /* stock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stock.png; sourceTree = "<group>"; };
+		BFE3F1CD1C26E7810048F64C /* BaseTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		BFE288271C1BC3B500844DE7 /* TimeLineSample */ = {
 			isa = PBXGroup;
 			children = (
+				BFE3F1C61C26E38D0048F64C /* Images */,
 				BFE288281C1BC3B500844DE7 /* AppDelegate.swift */,
 				BFE2882A1C1BC3B500844DE7 /* ViewController.swift */,
 				BFE2882C1C1BC3B500844DE7 /* Main.storyboard */,
@@ -71,12 +76,21 @@
 				BFE288311C1BC3B500844DE7 /* LaunchScreen.storyboard */,
 				BFE288341C1BC3B500844DE7 /* Info.plist */,
 				BFE2883A1C1BC7BE00844DE7 /* CustomUICollectionViewCell.swift */,
-				BFE2883C1C1C0F4000844DE7 /* AllPostiongViewController.swift */,
-				BFE2883E1C1C101B00844DE7 /* FeedViewController.swift */,
-				BFE288401C1C132E00844DE7 /* StockViewController.swift */,
-				BFE288441C1C18B800844DE7 /* OwnPostingViewController.swift */,
+				BFE2883C1C1C0F4000844DE7 /* AllPostTabViewController.swift */,
+				BFE2883E1C1C101B00844DE7 /* FeedTabViewController.swift */,
+				BFE3F1CD1C26E7810048F64C /* BaseTabViewController.swift */,
 			);
 			path = TimeLineSample;
+			sourceTree = "<group>";
+		};
+		BFE3F1C61C26E38D0048F64C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BFE3F1CB1C26E3C90048F64C /* stock.png */,
+				BFE3F1C71C26E3AE0048F64C /* feed.png */,
+				BFE3F1C91C26E3C00048F64C /* post.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE288331C1BC3B500844DE7 /* LaunchScreen.storyboard in Resources */,
+				BFE3F1C81C26E3AE0048F64C /* feed.png in Resources */,
+				BFE3F1CA1C26E3C00048F64C /* post.png in Resources */,
 				BFE288301C1BC3B500844DE7 /* Assets.xcassets in Resources */,
 				BFE2882E1C1BC3B500844DE7 /* Main.storyboard in Resources */,
+				BFE3F1CC1C26E3C90048F64C /* stock.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,11 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE2882B1C1BC3B500844DE7 /* ViewController.swift in Sources */,
-				BFE288411C1C132E00844DE7 /* StockViewController.swift in Sources */,
-				BFE2883D1C1C0F4000844DE7 /* AllPostiongViewController.swift in Sources */,
-				BFE2883F1C1C101B00844DE7 /* FeedViewController.swift in Sources */,
+				BFE2883D1C1C0F4000844DE7 /* AllPostTabViewController.swift in Sources */,
+				BFE2883F1C1C101B00844DE7 /* FeedTabViewController.swift in Sources */,
+				BFE3F1CE1C26E7810048F64C /* BaseTabViewController.swift in Sources */,
 				BFE288291C1BC3B500844DE7 /* AppDelegate.swift in Sources */,
-				BFE288451C1C18B800844DE7 /* OwnPostingViewController.swift in Sources */,
 				BFE2883B1C1BC7BE00844DE7 /* CustomUICollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +323,7 @@
 				BFE288391C1BC3B500844DE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

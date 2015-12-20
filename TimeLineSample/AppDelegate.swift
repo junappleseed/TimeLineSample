@@ -13,18 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    var myNavigationController: UINavigationController?
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        let first: ViewController = ViewController()
-        myNavigationController = UINavigationController(rootViewController: first)
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        self.window?.rootViewController = myNavigationController
-        self.window?.makeKeyAndVisible()
-        
-        UINavigationBar.appearance().barTintColor = UIColor.greenColor()
-        
         return true
     }
 

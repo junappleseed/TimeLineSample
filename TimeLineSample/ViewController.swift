@@ -10,31 +10,23 @@ import UIKit
 
 class ViewController: UITabBarController {
     
-    var allPostingViewController: AllPostingViewController!
-    var feedViewController: FeedViewController!
-    var stockViewController: StockViewController!
-    var ownPostingViewController: OwnPostingViewController!
+    var feedTabView: FeedTabViewController!
+    var allTabView: AllPostTabViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.title = "Title"
 
         /* フィードタブ */
-        feedViewController = FeedViewController()
-        feedViewController.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Featured, tag: 1)
+        feedTabView = FeedTabViewController()
+        feedTabView.tabBarItem = UITabBarItem(title: "フィード", image: UIImage(named: "feed.png"), tag: 1)
         /* すべての投稿タブ */
-        allPostingViewController = AllPostingViewController()
-        allPostingViewController.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.TopRated, tag: 2)
-        /* ストックタブ */
-        stockViewController = StockViewController()
-        stockViewController.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Bookmarks, tag: 3)
-        /* 自分の投稿タブ */
-        ownPostingViewController = OwnPostingViewController()
-        ownPostingViewController.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Contacts, tag: 4)
+        allTabView = AllPostTabViewController()
+        allTabView.tabBarItem = UITabBarItem(title: "すべて", image: UIImage(named: "post.png"), tag: 2)
         
-        let tabs = NSArray(objects: feedViewController!, allPostingViewController!, stockViewController!, ownPostingViewController!)
-        self.setViewControllers(tabs as? [UIViewController], animated: false)
+        let feedTabViewController = UINavigationController(rootViewController: feedTabView)
+        let allTabViewController = UINavigationController(rootViewController: allTabView)
+
+        self.setViewControllers([feedTabViewController, allTabViewController], animated: false)
     }
 
     override func didReceiveMemoryWarning() {
