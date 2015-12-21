@@ -19,6 +19,7 @@
 		BFE3F1CA1C26E3C00048F64C /* post.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE3F1C91C26E3C00048F64C /* post.png */; };
 		BFE3F1CC1C26E3C90048F64C /* stock.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE3F1CB1C26E3C90048F64C /* stock.png */; };
 		BFE3F1CE1C26E7810048F64C /* BaseTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE3F1CD1C26E7810048F64C /* BaseTabViewController.swift */; };
+		BFE3F1D01C283F5D0048F64C /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE3F1CF1C283F5D0048F64C /* picture.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		BFE3F1C91C26E3C00048F64C /* post.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = post.png; sourceTree = "<group>"; };
 		BFE3F1CB1C26E3C90048F64C /* stock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stock.png; sourceTree = "<group>"; };
 		BFE3F1CD1C26E7810048F64C /* BaseTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabViewController.swift; sourceTree = "<group>"; };
+		BFE3F1CF1C283F5D0048F64C /* picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		BFE3F1C61C26E38D0048F64C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				BFE3F1CF1C283F5D0048F64C /* picture.png */,
 				BFE3F1CB1C26E3C90048F64C /* stock.png */,
 				BFE3F1C71C26E3AE0048F64C /* feed.png */,
 				BFE3F1C91C26E3C00048F64C /* post.png */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE288331C1BC3B500844DE7 /* LaunchScreen.storyboard in Resources */,
+				BFE3F1D01C283F5D0048F64C /* picture.png in Resources */,
 				BFE3F1C81C26E3AE0048F64C /* feed.png in Resources */,
 				BFE3F1CA1C26E3C00048F64C /* post.png in Resources */,
 				BFE288301C1BC3B500844DE7 /* Assets.xcassets in Resources */,

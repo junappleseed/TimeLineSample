@@ -18,7 +18,6 @@ class AllPostTabViewController: BaseTabViewController {
         self.navigationItem.title = "すべての投稿"
         
         let screenWidth = UIScreen.mainScreen().bounds.size.width
-        
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSizeMake(screenWidth, 70)
         layout.minimumLineSpacing = 1.0

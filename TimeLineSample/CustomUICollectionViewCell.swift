@@ -9,7 +9,9 @@
 import UIKit
 
 class CustomUICollectionViewCell: UICollectionViewCell {
-    var textLabel : UILabel?
+
+    var imageView: UIImageView!
+    var textLabel: UILabel!
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
@@ -18,13 +20,21 @@ class CustomUICollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        // UILabelを生成.
-        textLabel = UILabel(frame: CGRectMake(0, 0, frame.width, frame.height))
+        let image = UIImage(named: "picture.png")
+        
+        UIGraphicsBeginImageContext(CGSizeMake(60, 60))
+        image!.drawInRect(CGRectMake(0, 0, 60, 60))
+        let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        imageView = UIImageView(image: resizedImage)
+        
+        textLabel = UILabel(frame: CGRectMake(60, 0, frame.width - 60, frame.height))
         textLabel?.text = "nil"
         textLabel?.backgroundColor = UIColor.whiteColor()
         textLabel?.textAlignment = NSTextAlignment.Center
         
-        // Cellに追加.
+        self.contentView.addSubview(imageView!)
         self.contentView.addSubview(textLabel!)
     }
 }
