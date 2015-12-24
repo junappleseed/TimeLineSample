@@ -25,6 +25,7 @@ class AllPostTabViewController: BaseTabViewController {
         myCollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
         myCollectionView.registerClass(CustomUICollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
         myCollectionView.backgroundColor = UIColor.init(white: 0.9, alpha: 1.0)
+        
         myCollectionView.delegate = self
         myCollectionView.dataSource = self
         
